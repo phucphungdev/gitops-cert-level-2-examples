@@ -7,3 +7,10 @@ argocd app create my-application-sets \
     --path ./application-sets/my-application-sets/ \
 		--dest-name in-cluster \
     --dest-namespace default
+
+argocd login kubernetes-vm:30443 --insecure --username admin --password MFW80OyVEQm-HdQX
+argocd cluster add default --name cluster-2
+argocd cluster add default --name cluster-3
+
+
+
